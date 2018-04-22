@@ -2,31 +2,46 @@
 <html>
 
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="utf-8" />
 	<title>FlexBoxComicPanel</title>
 	<link href="css/style.css" type="text/css" rel="stylesheet">
 </head>
 
 <body>
-<ul class="navigation">
-  <li><a href="#">links</a></li>
-  <li><a href="#">Heroes</a></li>
-  <li><a href="#">Villiains</a></li>
-  <li><a href="#">Comics</a></li>
-</ul>
+	<ul class="navigation">
+		<li><a href="#">Fandom Links</a> </li>
+		<li><a href="https://en.wikipedia.org/wiki/List_of_Marvel_Cinematic_Universe_film_actors" target="_blank">Actors</a></li>
+		<li><a href="http://marvelcinematicuniverse.wikia.com/wiki/Category:Heroes" target="_blank">Heroes</a></li>
+		<li><a href="http://marvelcinematicuniverse.wikia.com/wiki/Category:Villains" target="_blank">Villiains</a></li>
+		<li><a href="https://en.wikipedia.org/wiki/Marvel_Cinematic_Universe_tie-in_comics" target="_blank">Tie in Comics</a></li>
+	</ul>
 
-	<div id="wrapper">
-		<div id="header">comics panels</div>
-		<ul id="row1panel">
-			<li id="center" class="column"><img src="image/ironman.jpg" />ironman</li>
-			<li id="left" class="column"> <img src="image/hulk.jpg" />hulk</li>
-			<li id="right" class="column"><img src="image/captain.jpg" />captain</li>
-			<li id="center" class="column"><img src="image/team.jpg" />team</li>
-			<li id="center" class="column"><img src="image/thor.jpg" />thor</li>
-			<li id="right" class="column"><img src="image/hulk2.jpg" />Hulk Smash</li>
-		</ul>
-		<div id="footer">footer</div>
+	<div class="flex-grid">
+		<div class="col">
+			<a href="http://marvelcinematicuniverse.wikia.com/wiki/Iron_Man" target="_blank"><img src="image/ironman.jpg" /></a>
+		</div>
+		<div class="col">
+			<a href="http://marvelcinematicuniverse.wikia.com/wiki/Hulk" target="_blank"><img src="image/hulk.jpg" alt="hulk" /></a>
+		</div>
+		<div class="col">
+			<a href="http://marvelcinematicuniverse.wikia.com/wiki/Captain_America" target="_blank"><img src="image/captain.jpg" /></a>
+		</div>
 	</div>
+	<div class="flex-grid">
+		<div class="col"><a href="http://marvelcinematicuniverse.wikia.com/wiki/Avengers" target="_blank">
+			<img src="image/team.jpg" /></a>
+		</div>
+		<div class="col"><a href="http://marvelcinematicuniverse.wikia.com/wiki/Thor" target="_blank">
+			<img src="image/thor.jpg" /></a>
+		</div>
+		<div class="col"><a href="https://en.wikipedia.org/wiki/World_War_Hulk" target="_blank">
+			<img src="image/hulk2.jpg" /></a>
+		</div>
+	</div>
+
+	<footer class="footer"></footer>
+
 </body>
 
 </html>

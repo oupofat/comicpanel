@@ -1,3 +1,22 @@
+/* wiki links 
+http://marvelcinematicuniverse.wikia.com/wiki/Captain_America
+http://marvelcinematicuniverse.wikia.com/wiki/Hulk
+http://marvelcinematicuniverse.wikia.com/wiki/Thor
+http://marvelcinematicuniverse.wikia.com/wiki/Iron_Man
+https://en.wikipedia.org/wiki/World_War_Hulk
+http://marvelcinematicuniverse.wikia.com/wiki/Avengers
+
+*/
+/* wiki links for marvel heroes
+
+https://en.wikipedia.org/wiki/List_of_Marvel_Cinematic_Universe_film_actors
+http://marvelcinematicuniverse.wikia.com/wiki/Category:Heroes
+http://marvelcinematicuniverse.wikia.com/wiki/Category:Villains
+https://en.wikipedia.org/wiki/Marvel_Cinematic_Universe_tie-in_comics
+
+*/
+
+
 body {
 	background-color: antiquewhite;
 }
@@ -56,14 +75,18 @@ body {
 	}
 }
 
+/*panels for comics*/
+
+* {
+	box-sizing: border-box;
+}
 
 
-
-#row1panel {
+.flex-grid {
 	padding: 0;
 	margin: 0;
 	list-style: none;
-	
+
 
 	display: -webkit-box;
 	display: -moz-box;
@@ -76,6 +99,12 @@ body {
 }
 
 
-.column {
-	
+
+.flex-grid {
+	display: flex;
+}
+
+.footer,
+.push {
+  height: 50px;
 }
